@@ -1,0 +1,121 @@
+/* src/pages/SafetyInfo.css */
+.info-page { padding: 2rem 1rem 4rem; }
+.info-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.75rem; }
+
+.info-header { display: flex; align-items: center; gap: 0.75rem; color: var(--orange); }
+.info-header h1 { font-size: 1.8rem; color: var(--text); margin-bottom: 0.2rem; }
+.info-header p { color: var(--text-muted); font-size: 0.875rem; }
+
+.disaster-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.dtab {
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--navy-border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+}
+.dtab:hover { border-color: var(--dcolor); color: var(--dcolor); }
+.dtab.active { background: color-mix(in srgb, var(--dcolor) 15%, transparent); border-color: var(--dcolor); color: var(--dcolor); }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; } }
+
+.info-section { display: flex; flex-direction: column; gap: 1.25rem; }
+.info-section h2 { font-size: 1.35rem; }
+
+.info-block h3 { font-size: 0.95rem; margin-bottom: 0.6rem; color: var(--text-muted); }
+
+.info-list { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.info-list li::before { content: "•"; color: var(--orange); flex-shrink: 0; }
+.info-list.green li::before { color: var(--success); }
+
+.steps-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.step-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Kit */
+.kit-section { display: flex; flex-direction: column; gap: 1rem; }
+.kit-header { display: flex; align-items: center; justify-content: space-between; }
+.kit-header h2 { display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; }
+.kit-progress { font-family: 'Rajdhani', sans-serif; font-weight: 700; color: var(--success); font-size: 0.9rem; }
+
+.kit-bar { height: 4px; background: var(--navy-border); border-radius: 999px; overflow: hidden; }
+.kit-fill { height: 100%; background: var(--success); border-radius: 999px; transition: width 0.4s; }
+
+.kit-list { display: flex; flex-direction: column; gap: 0.1rem; max-height: 420px; overflow-y: auto; }
+
+.kit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.kit-item:hover { background: rgba(255,255,255,0.03); }
+.kit-item.checked .kit-text { text-decoration: line-through; color: var(--text-muted); }
+
+.kit-text { flex: 1; font-size: 0.83rem; color: var(--text); }
+.kit-cat { font-size: 0.68rem; color: var(--text-muted); background: rgba(255,255,255,0.05); padding: 0.15rem 0.45rem; border-radius: 999px; flex-shrink: 0; }
+
+/* Helplines */
+.helplines h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+.helplines-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; }
+
+.helpline-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem;
+  background: rgba(247,92,3,0.06);
+  border: 1px solid rgba(247,92,3,0.2);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+.helpline-card:hover { background: rgba(247,92,3,0.12); border-color: var(--orange); }
+
+.helpline-num { font-family: 'Rajdhani', sans-serif; font-size: 1.4rem; font-weight: 700; color: var(--orange); }
+.helpline-name { font-size: 0.72rem; color: var(--text-muted); }

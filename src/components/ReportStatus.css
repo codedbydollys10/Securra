@@ -1,0 +1,80 @@
+/* src/components/ReportStatus.css */
+.status-tracker {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.status-tracker.fake {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--danger);
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.status-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.step-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--navy-border);
+  color: var(--text-muted);
+  transition: all 0.3s;
+}
+
+.status-step.done .step-icon {
+  background: rgba(247, 92, 3, 0.15);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.status-step.active .step-icon {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: white;
+  box-shadow: 0 0 12px var(--orange-glow);
+}
+
+.step-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 70px;
+  line-height: 1.2;
+}
+
+.status-step.done .step-label,
+.status-step.active .step-label {
+  color: var(--text);
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background: var(--navy-border);
+  min-width: 20px;
+  margin-bottom: 18px;
+  transition: background 0.3s;
+}
+
+.step-line.done {
+  background: var(--orange);
+}

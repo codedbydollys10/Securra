@@ -1,0 +1,265 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Brand Colors - Universal */
+  --orange: #f75c03;
+  --orange-light: #ff7c2a;
+  --orange-dark: #c44800;
+  --orange-glow: rgba(247, 92, 3, 0.25);
+
+  --blue: #0a3d8f;
+  --blue-mid: #1557c0;
+  --blue-light: #2e78e4;
+  --blue-pale: #e8f0fe;
+
+  /* Status Colors - Universal */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Radius */
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+/* DARK THEME (Default) */
+:root,
+[data-theme="dark"] {
+  /* Background Colors */
+  --navy: #060f1e;
+  --navy-card: #0c1a2e;
+  --navy-border: rgba(255, 255, 255, 0.08);
+  --bg: #060f1e;
+  --bg-hover: #0c1a2e;
+
+  /* Text Colors */
+  --text: #f0f4ff;
+  --text-muted: #8a9bbf;
+  --surface: rgba(10, 20, 40, 0.9);
+
+  /* Additional dark theme colors */
+  --input-bg: #0c1a2e;
+  --input-border: rgba(255, 255, 255, 0.08);
+  --input-text: #f0f4ff;
+}
+
+/* LIGHT THEME */
+[data-theme="light"] {
+  /* Background Colors */
+  --navy: #ffffff;
+  --navy-card: #f5f7fa;
+  --navy-border: rgba(0, 0, 0, 0.08);
+  --bg: #ffffff;
+  --bg-hover: #f5f7fa;
+
+  /* Text Colors */
+  --text: #1a202c;
+  --text-muted: #718096;
+  --surface: rgba(255, 255, 255, 0.95);
+
+  /* Additional light theme colors */
+  --input-bg: #f5f7fa;
+  --input-border: rgba(0, 0, 0, 0.1);
+  --input-text: #1a202c;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--navy);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--blue-mid); border-radius: 3px; }
+
+/* Utils */
+.card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: white;
+}
+.btn-primary:hover { background: var(--orange-light); transform: translateY(-1px); }
+
+.btn-secondary {
+  background: var(--blue);
+  color: white;
+}
+.btn-secondary:hover { background: var(--blue-mid); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--navy-border);
+}
+.btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-orange { background: var(--orange-glow); color: var(--orange-light); border: 1px solid var(--orange-dark); }
+.badge-blue { background: rgba(21, 87, 192, 0.2); color: var(--blue-light); border: 1px solid var(--blue); }
+.badge-green { background: rgba(34, 197, 94, 0.15); color: var(--success); border: 1px solid rgba(34,197,94,0.4); }
+.badge-red { background: rgba(239, 68, 68, 0.15); color: var(--danger); border: 1px solid rgba(239,68,68,0.4); }
+.badge-yellow { background: rgba(245, 158, 11, 0.15); color: var(--warning); border: 1px solid rgba(245,158,11,0.4); }
+
+/* Input */
+.input {
+  width: 100%;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+  color: var(--input-text);
+  padding: 0.7rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, background-color 0.3s;
+  outline: none;
+}
+.input:focus { border-color: var(--orange); }
+.input::placeholder { color: var(--text-muted); }
+
+select.input option { background: var(--navy-card); color: var(--text); }
+
+/* Animations */
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Leaflet map fixes */
+.leaflet-container {
+  background: var(--navy) !important;
+  border-radius: var(--radius);
+  z-index: 1;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-card) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(247,92,3,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(21,87,192,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 20px rgba(247,92,3,0.3);
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.welcome-content .btn {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 15px rgba(247,92,3,0.3);
+}
+
+.welcome-content .btn:hover {
+  box-shadow: 0 6px 20px rgba(247,92,3,0.4);
+}
+
+/* Loading Screen */
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 600;
+}

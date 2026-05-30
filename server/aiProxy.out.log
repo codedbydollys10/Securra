@@ -1,0 +1,3 @@
+xAI proxy running on http://localhost:3001/api/ai
+Primary model: grok-4-1-fast
+Model fallback order: grok-4-1-fast -> grok-4.20-reasoning -> grok-4

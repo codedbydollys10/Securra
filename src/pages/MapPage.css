@@ -1,0 +1,88 @@
+/* src/pages/MapPage.css */
+.map-page { padding: 2rem 1rem 4rem; }
+.map-page-inner { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.75rem; }
+
+.map-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.map-page-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.map-page-header p { color: var(--text-muted); font-size: 0.875rem; }
+
+.map-filters { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+.filter-btn {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--navy-border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover { border-color: var(--orange); color: var(--orange); }
+.filter-btn.active { background: var(--orange); border-color: var(--orange); color: white; }
+
+/* Nearby */
+.nearby-section h2 { font-size: 1.4rem; margin-bottom: 0.4rem; }
+.nearby-sub { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem; }
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.nearby-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.nearby-card:hover {
+  border-color: var(--scolor);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.nearby-icon { font-size: 1.75rem; }
+.nearby-label { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1rem; color: var(--text); }
+.nearby-hint { font-size: 0.72rem; color: var(--text-muted); }
+
+/* Info Cards */
+.map-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.info-card {
+  background: var(--navy-card);
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.info-card h4 { font-size: 0.9rem; margin-bottom: 0.3rem; }
+.info-card p { font-size: 0.78rem; color: var(--text-muted); }
