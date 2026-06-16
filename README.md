@@ -86,7 +86,7 @@ SECURRA aligns with the CrisisNet vision by enabling:
 
 
 
-### "Lack of a centralized platform for citizen distress signals (SOS calls, app alerts, social media posts) results in many emergency requests going unnoticed or being responded to too late." 
+"Lack of a centralized platform for citizen distress signals (SOS calls, app alerts, social media posts) results in many emergency requests going unnoticed or being responded to too late." 
 
 
 
