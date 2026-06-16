@@ -523,15 +523,6 @@ Securra/
 
 ### Dolly Sharma
 
-Computer Engineering Student
-
-Passionate about:
-
-* Artificial Intelligence
-* Full Stack Development
-* Machine Learning
-* Social Impact Technology
-
 GitHub:
 https://github.com/codedbydollys10
 
