@@ -9,9 +9,7 @@ Built under the theme **"CrisisNet: Rapid Disaster Response & Aid Coordination"*
 By combining citizen participation, GPS-based reporting, AI-powered assistance, geotagging, OTP verification, and trust-score based validation, SECURRA transforms fragmented emergency communication into a reliable and actionable disaster response system.
 
 ---
-## 📄 Project Report
-
-### 📘 **[View Full Project Report](./docs/SECURRA_PROJECT_REPORT.pdf)**
+## 📄 Project Report --> 📘 **[View Full Project Report](./docs/SECURRA_PROJECT_REPORT.pdf)**
 ---
 
 ## 📑 Table of Contents
