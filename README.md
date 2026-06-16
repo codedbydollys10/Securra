@@ -10,7 +10,7 @@ By combining citizen participation, GPS-based reporting, AI-powered assistance, 
 
 ---
 
-# 📑 Table of Contents
+## 📑 Table of Contents
 
 * [Overview](#-overview)
 * [Theme](#-theme)
@@ -33,7 +33,7 @@ By combining citizen participation, GPS-based reporting, AI-powered assistance, 
 
 ---
 
-# 🌍 Overview
+## 🌍 Overview
 
 Natural disasters, road accidents, fire outbreaks, and other emergencies require immediate communication and rapid response.
 
@@ -60,9 +60,9 @@ SECURRA addresses these challenges by providing a centralized platform where cit
 
 ---
 
-# 🎯 Theme
+## 🎯 Theme
 
-## CrisisNet: Rapid Disaster Response & Aid Coordination
+### CrisisNet: Rapid Disaster Response & Aid Coordination
 
 SECURRA aligns with the CrisisNet vision by enabling:
 
@@ -80,7 +80,7 @@ SECURRA aligns with the CrisisNet vision by enabling:
 
 ---
 
-# 🚨 Problem Statement
+##🚨 Problem Statement
 
 > Lack of a centralized platform for citizen distress signals (SOS calls, app alerts, social media posts) results in many emergency requests going unnoticed or being responded to too late.
 
@@ -97,7 +97,7 @@ These limitations directly impact rescue operations and disaster management effe
 
 ---
 
-# 🔍 Why Existing Systems Fail
+## 🔍 Why Existing Systems Fail
 
 | Existing Platform            | Features                  | Limitations                      |
 | ---------------------------- | ------------------------- | -------------------------------- |
@@ -111,7 +111,7 @@ A unified and intelligent solution is required to bridge these gaps.
 
 ---
 
-# 💡 Solution Overview
+## 💡 Solution Overview
 
 SECURRA introduces a two-layer disaster response framework:
 
@@ -137,11 +137,11 @@ This approach ensures:
 
 ---
 
-# 👤 Citizen Reporting Module
+##👤 Citizen Reporting Module
 
 The first layer focuses on empowering citizens during emergencies.
 
-## Features
+### Features
 
 ### 🚨 SOS Emergency Alert
 
@@ -258,7 +258,7 @@ Only verified incidents proceed to response teams.
 
 ---
 
-# ⭐ Recommended Integrated Solution
+## ⭐ Recommended Integrated Solution
 
 SECURRA combines citizen participation with authority verification.
 
@@ -284,9 +284,9 @@ This hybrid model balances accessibility with authenticity.
 
 ---
 
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
-## User Layer
+### User Layer
 
 * Registration & Login
 * SOS Alerts
@@ -295,14 +295,14 @@ This hybrid model balances accessibility with authenticity.
 
 ↓
 
-## Data Layer
+### Data Layer
 
 * Firebase Database
 * Real-Time Incident Storage
 
 ↓
 
-## Verification Layer
+### Verification Layer
 
 * Admin Dashboard
 * OTP Verification
@@ -311,7 +311,7 @@ This hybrid model balances accessibility with authenticity.
 
 ↓
 
-## Response Layer
+### Response Layer
 
 * Incident Monitoring
 * Disaster Coordination
@@ -319,7 +319,7 @@ This hybrid model balances accessibility with authenticity.
 
 ---
 
-# 🚀 Key Features
+## 🚀 Key Features
 
 ### 🚨 SOS Emergency Reporting
 
@@ -363,7 +363,7 @@ Authority-focused management interface.
 
 ---
 
-# ⚙️ Technology Stack
+## ⚙️ Technology Stack
 
 ## Frontend
 
@@ -404,7 +404,7 @@ Authority-focused management interface.
 
 ---
 
-# 🌍 Applications
+## 🌍 Applications
 
 ### 🚑 Emergency Response Agencies
 
@@ -428,7 +428,7 @@ Disaster management and emergency response studies.
 
 ---
 
-# 🎓 Subject Integration
+## 🎓 Subject Integration
 
 ### Software Engineering & Project Management
 
@@ -461,7 +461,7 @@ Disaster management and emergency response studies.
 
 ---
 
-# 📄 Project Report
+## 📄 Project Report
 
 The complete academic documentation for SECURRA is available below.
 
@@ -481,7 +481,7 @@ The report includes:
 
 ---
 
-# 🔮 Future Scope
+## 🔮 Future Scope
 
 Planned enhancements include:
 
@@ -497,26 +497,49 @@ Planned enhancements include:
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```text
-SECURRA/
+Securra/
 │
-├── frontend/
-├── backend/
-├── public/
-├── docs/
-│   └── SECURRA_PROJECT_REPORT.pdf
+├── public/                     # Static assets
+│
+├── scripts/                    # Utility and helper scripts
+│
+├── server/                     # Backend services and APIs
+│
+├── src/                        # Frontend source code
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── utils/
+│   └── ...
+│
+├── .vscode/                    # VS Code configuration
+│
+├── .gitignore
 │
 ├── README.md
-└── package.json
+│
+├── package.json                # Project dependencies
+│
+├── package-lock.json
+│
+├── make_admin.js               # Admin creation script
+│
+├── test_ai_assistant.js        # AI Assistant testing
+│
+├── test_final.js               # Final integration testing
+│
+└── test_gemini.js              # Gemini AI testing
 ```
+
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
-## Dolly Sharma
+### Dolly Sharma
 
 Computer Engineering Student
 
@@ -532,7 +555,7 @@ https://github.com/codedbydollys10
 
 ---
 
-# ⭐ Support
+##⭐ Support
 
 If you found this project useful:
 
