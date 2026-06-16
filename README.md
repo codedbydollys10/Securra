@@ -201,7 +201,7 @@ Users can monitor the status of submitted reports.
 
 ---
 
-# 🛡️ Admin Verification Module
+## 🛡️ Admin Verification Module
 
 The second layer focuses on ensuring report authenticity.
 
