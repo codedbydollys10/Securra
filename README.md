@@ -10,7 +10,6 @@ By combining citizen participation, GPS-based reporting, AI-powered assistance, 
 
 ---
 ## 📄 Project Report --> 📘 **[View Full Project Report](./docs/SECURRA_PROJECT_REPORT.pdf)**
----
 
 ## 📑 Table of Contents
 
