@@ -539,10 +539,10 @@ https://github.com/codedbydollys10
 
 ---
 
-##⭐ Support
+## ⭐ Support
 
 If you found this project useful:
 
-⭐ Star the repository
+## ⭐ Star the repository
 
 Your support helps improve future disaster-tech and AI-powered social impact projects.
