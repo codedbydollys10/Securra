@@ -300,14 +300,14 @@ This hybrid model balances accessibility with authenticity.
 * Incident Reporting
 * Safety Guidance
 
-      ↓
+     ↓
 
 ### Data Layer
 
 * Firebase Database
 * Real-Time Incident Storage
 
-      ↓
+     ↓
 
 ### Verification Layer
 
@@ -316,7 +316,7 @@ This hybrid model balances accessibility with authenticity.
 * Geotagging
 * Trust Score Evaluation
 
-      ↓
+     ↓
 
 ### Response Layer
 
