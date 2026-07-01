@@ -1,4 +1,4 @@
-# 🚨 SECURRA – Alert, Assist, Protect
+# 🚨 SECURRA – Alert, Assist, Protect.
 
 ### AI-Powered Emergency Reporting, Verification & Disaster Response Platform
 
